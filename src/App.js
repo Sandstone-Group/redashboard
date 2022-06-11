@@ -1,10 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Datacard from "./components/datacard";
+import Navbar from "./components/navbar";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hi Paul</h1>
+      <Navbar />
+      <Datacard />
     </div>
   );
 }
