@@ -1,12 +1,12 @@
 import "./App.css";
-import Datacard from "./components/datacard";
 import Navbar from "./components/navbar";
+import Datetile from "./components/datatile";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Datacard />
+      <Datetile />
     </div>
   );
 }
