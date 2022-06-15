@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/navbar";
 import Datetile from "./components/datatile";
+import Chart from "./components/chart";
 
 const dataTest = [
   {
@@ -41,6 +42,7 @@ function App() {
           />
         ))}
       </div>
+      {/* <Chart /> */}
     </div>
   );
 }
