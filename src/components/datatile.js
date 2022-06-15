@@ -5,20 +5,19 @@ import Tooltip from "@mui/material/Tooltip";
 import InfoIcon from "@mui/icons-material/Info";
 import "./datatile.css";
 
-const Datetile = () => {
+const Datetile = (props) => {
   return (
     <div className="background">
       <Card>
         <div>
           <Statistic
-            title="Core CPI"
-            value={8.6}
-            precision={1}
+            title={props.title}
+            value={props.value}
+            precision={props.precision}
             valueStyle={{ color: "#3f8600" }}
-            prefix={<ArrowUpOutlined />}
-            suffix="%"
+            suffix={props.suffix}
           />
-          <Tooltip title="Hi Paul Blow Me">
+          <Tooltip title={props.iconTitle}>
             <InfoIcon />
           </Tooltip>
         </div>
