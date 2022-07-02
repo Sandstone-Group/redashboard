@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+.wrapper {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 7px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chart{
+  padding-top: 25px;
+}
+
+
+
 
 
 

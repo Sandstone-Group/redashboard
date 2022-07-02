@@ -25,13 +25,20 @@ const dataTest = [
     precison: 1,
     iconTitle: "Blow Me",
   },
+  {
+    title: "Core Stu",
+    value: 10.6,
+    suffix: "*",
+    precison: 1,
+    iconTitle: "Blow Me",
+  },
 ];
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <div>
+      <div className="wrapper">
         {dataTest.map((e) => (
           <Datetile
             title={e.title}
@@ -42,7 +49,9 @@ function App() {
           />
         ))}
       </div>
-      {/* <Chart /> */}
+      <div className="chart">
+        <Chart />
+      </div>
     </div>
   );
 }
