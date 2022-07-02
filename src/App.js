@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/navbar";
 import Datetile from "./components/datatile";
 import Chart from "./components/chart";
+import Rss from "./components/rssfeed";
 
 const dataTest = [
   {
@@ -51,6 +52,9 @@ function App() {
       </div>
       <div className="chart">
         <Chart />
+        <div className="rss-text">
+          <Rss />
+        </div>
       </div>
     </div>
   );
